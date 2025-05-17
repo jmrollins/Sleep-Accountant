@@ -1,19 +1,19 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import SettingsScreen from './SettingsScreen';
-import StatsScreen from './StatsScreen';
+import SettingsScreen from '../Settings/SettingsScreen';
+import BookedScreen from './BookedScreen';
 
 
 const Stack = createNativeStackNavigator();
 
-export default function SatsStackNavigator({ navigation }: any) {
+export default function BookedStackNavigator({ navigation }: any) {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="StatsMain"
-        component={StatsScreen}
+        name="BookedMain"
+        component={BookedScreen}
         options={({ navigation }) => ({
-          title: "Stats",
+          title: "Booked",
           headerRight: () => (
             <Ionicons
               name="settings-outline"

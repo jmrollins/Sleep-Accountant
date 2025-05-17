@@ -1,9 +1,9 @@
 import { Text, View } from "react-native";
 
-export default function ScheduleScreen() {
+export default function OwedScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Schedule Screen</Text>
+      <Text>Owed Screen</Text>
     </View>
   );
 }

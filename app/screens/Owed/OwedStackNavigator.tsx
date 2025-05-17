@@ -1,19 +1,19 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import HomeScreen from './HomeScreen';
-import SettingsScreen from './SettingsScreen';
+import SettingsScreen from '../Settings/SettingsScreen';
+import OwedScreen from './OwedScreen';
 
 
 const Stack = createNativeStackNavigator();
 
-export default function HomeStackNavigator({ navigation }: any) {
+export default function OwedStackNavigator({ navigation }: any) {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="HomeMain"
-        component={HomeScreen}
+        name="OwedMain"
+        component={OwedScreen}
         options={({ navigation }) => ({
-          title: "Home",
+          title: "Owed",
           headerRight: () => (
             <Ionicons
               name="settings-outline"
